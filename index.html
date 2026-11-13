@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+
+  <!-- SEO Title & Meta Descriptions -->
+  <title>Studio 01 · Laboratorio de Software, Turneros & CRM con IA</title>
+  <meta name="description"
+    content="Studio 01 (Estudio 01 / Estudio Lab) es un laboratorio independiente de software en San Francisco, Córdoba. Desarrollamos landing pages de alta conversión, turneros online interactivos y CRMs a medida con inteligencia artificial.">
+  <meta name="keywords"
+    content="studio 01, estudio 01, estudio lab, s01, s01.studio, software freelance, turneros online, crm con ia, landing pages san francisco cordoba, desarrollo web argentina, software a medida, artefactos digitales">
+  <meta name="author" content="Studio 01">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://s01.studio/">
+
+  <!-- Open Graph / Redes Sociales & WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://s01.studio/">
+  <meta property="og:site_name" content="Studio 01">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Studio 01 · Independent Design & Engineering Lab">
+  <meta property="og:description"
+    content="Software directo al negocio. Landing pages de alta conversión, turneros interactivos y CRMs personalizados con asistencia IA.">
+  <meta property="og:image" content="https://s01.studio/images/og-cover.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Studio 01 · Software & Web Artifacts">
+  <meta name="twitter:description" content="Designed with intent. Built with precision. Software directo al negocio.">
+  <meta name="twitter:image" content="https://s01.studio/images/og-cover.png">
+
+  <!-- Schema.org JSON-LD Structured Data (Google Rich Snippets) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Studio 01",
+    "alternateName": [
+      "Estudio 01",
+      "Estudio Lab",
+      "s01",
+      "s01.studio",
+      "Studio One"
+    ],
+    "url": "https://s01.studio",
+    "logo": "https://s01.studio/images/logo.png",
+    "image": "https://s01.studio/images/og-cover.png",
+    "description": "Laboratorio independiente de software y desarrollo de artefactos web de alto rendimiento en San Francisco, Córdoba.",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Francisco",
+      "addressRegion": "Córdoba",
+      "addressCountry": "AR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -31.4279,
+      "longitude": -62.0827
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "18"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Catálogo de Artefactos de Software",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Landing Pages Personalizadas / Presentación Digital",
+            "description": "Páginas modulares de venta directa a WhatsApp con arquitectura semántica limpia y carga sub-segundo."
+          },
+          "price": "110000",
+          "priceCurrency": "ARS"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Sistemas Livianos & Turneros Online",
+            "description": "Plataforma de autogestión de turnos 24/7 para consultorios, despachos y prestadores de servicios."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "CRM Personalizados con Asistencia IA",
+            "description": "Captura y clasificación de leads por WhatsApp con scoring de IA y sugerencia de respuestas contextuales."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "QR Cards para Eventos & Acceso Digital",
+            "description": "Invitaciones y pases digitales con confirmación RSVP y verificación instantánea por código QR."
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Typography: Plus Jakarta Sans + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Modular Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- ACCESSIBLE SKIP LINK -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- HEADER -->
+  <header class="site-header grid-border-b">
+    <div class="container grid-border-x">
+      <div class="header-inner">
+
+        <a href="#" class="brand-mark" aria-label="Studio 01 - Inicio">
+          <span class="brand-id">[ s01 ]</span>
+          <span>STUDIO 01</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a href="#servicios" class="nav-link">01.SERVICIOS</a>
+          <a href="#proceso" class="nav-link hide-mobile">02.PROCESO</a>
+          <a href="#presupuestador" class="nav-link">03.PRESUPUESTO</a>
+
+          <!-- THEME TOGGLE BUTTON -->
+          <button id="theme-toggle-btn" class="theme-toggle" type="button" aria-label="Cambiar a tema claro"
+            aria-pressed="false" onclick="toggleTheme()">
+            <span id="theme-icon">☀</span>
+            <span id="theme-label">light</span>
+          </button>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section grid-border-b">
+      <div class="container grid-border-x">
+        <div class="hero-grid">
+
+          <!-- LEFT: TYPOGRAPHIC HEADLINE & CTAS -->
+          <div>
+            <div class="meta-tag">INGENIERÍA WEB & ARTEFACTOS DIGITALES</div>
+            <h1 class="hero-headline">
+              Software directo al negocio.
+            </h1>
+            <p class="hero-subtext">
+              Construimos páginas de venta, sistemas de reserva y herramientas interactivas diseñadas para operar con
+              velocidad. Sin intermediarios, sin código superfluo y con arquitectura modular.
+            </p>
+
+            <div class="hero-meta-bar">
+              <div class="chip-mono">ANTICIPO: <strong>50%</strong></div>
+              <div class="chip-mono">SOPORTE: <strong>6 MESES INCLUIDOS</strong></div>
+              <div class="chip-mono">MANTENIMIENTO: <strong>DESDE 20 USD/MES</strong></div>
+            </div>
+
+            <div class="hero-cta-group">
+              <a href="#presupuestador" class="cta-button">
+                COTIZAR EN VIVO →
+              </a>
+              <a href="#servicios" class="cta-button secondary">
+                EXPLORAR ARTEFACTOS
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT: DYNAMIC REAL-TIME CALENDAR WIDGET -->
+          <div>
+            <div class="calendar-preview-widget" role="region" aria-label="Previsualización de Calendario Dinámico">
+
+              <div class="widget-header">
+                <div class="widget-title">
+                  <span class="status-dot pulse"></span>
+                  <span>CALENDAR ARTIFACT · V2.4</span>
+                </div>
+                <div class="month-nav" id="cal-month-title">CARGANDO...</div>
+              </div>
+
+              <!-- Weekday Headers -->
+              <div class="calendar-weekdays" aria-hidden="true">
+                <div>LU</div>
+                <div>MA</div>
+                <div>MI</div>
+                <div>JU</div>
+                <div>VI</div>
+                <div>SA</div>
+                <div>DO</div>
+              </div>
+
+              <!-- Calendar Interactive Grid (Filled dynamically via JS) -->
+              <div class="calendar-days-grid" id="calendar-days"></div>
+
+              <!-- Slots Panel -->
+              <div class="cal-slots-panel">
+                <div class="slots-header">
+                  <span id="selected-date-label">FECHA SELECCIONADA: HOY</span>
+                  <span style="color: var(--status-online);">3 TURNOS DISPONIBLES</span>
+                </div>
+                <div class="slots-list" role="group" aria-label="Horarios disponibles">
+                  <button type="button" class="slot-item active" onclick="selectSlot(this)">09:30 ART</button>
+                  <button type="button" class="slot-item" onclick="selectSlot(this)">11:00 ART</button>
+                  <button type="button" class="slot-item" onclick="selectSlot(this)">15:30 ART</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SERVICES SECTION -->
+    <section id="servicios" class="grid-border-b">
+      <div class="container grid-border-x">
+
+        <div class="section-title-bar">
+          <div>
+            <div class="section-index">// 01 ARTEFACTOS & CAPACIDADES</div>
+            <h2 class="section-heading">Oferta Modular de Servicios</h2>
+          </div>
+          <div class="chip-mono">4 ENTREGABLES TÉCNICOS</div>
+        </div>
+
+        <!-- ARTEFACTO A: CUSTOM LANDING PAGES -->
+        <article class="offering-block">
+          <div class="offering-text-col">
+            <div class="offering-tag">[ SECCIÓN 01 / ARTEFACTO A ]</div>
+            <h3 class="offering-title">Landing Pages Personalizada / Presentación digital</h3>
+            <p class="offering-desc">
+              Páginas orientadas a presencia de marca y conversión directa a WhatsApp. Estructura modular transparente
+              donde cada sección cumple un rol específico en la decisión de compra.
+            </p>
+            <ul class="offering-specs-list">
+              <li><span>—</span> Arquitectura: <strong>Bloques semánticos modulares de carga sub-segundo</strong></li>
+              <li><span>—</span> Conversión: <strong>Botón directo a WhatsApp con mensaje dinámico</strong></li>
+              <li><span>—</span> Escalón de precio: <strong>$110.000 / $150.000 / $200.000 ARS</strong></li>
+            </ul>
+            <div class="offering-footer-bar">
+              <a href="#presupuestador" class="cta-button secondary">CALCULAR SECCIONES ↓</a>
+            </div>
+          </div>
+
+          <!-- VISUAL A: WIREFRAME SCHEMATIC -->
+          <div class="offering-visual-col">
+            <div class="wireframe-preview" aria-hidden="true">
+              <div class="wireframe-bar">
+                <span>INDEX.HTML</span>
+                <span>STATUS 200 OK</span>
+              </div>
+              <div class="wireframe-hero-block">
+                <div class="wireframe-line" style="width: 70%;"></div>
+                <div class="wireframe-line" style="width: 90%;"></div>
+                <div class="wireframe-line" style="width: 50%;"></div>
+                <div class="wireframe-btn"></div>
+              </div>
+              <div class="wireframe-grid-blocks">
+                <div class="wireframe-card-cell">
+                  <div class="wireframe-line" style="width: 60%;"></div>
+                  <div class="wireframe-line" style="width: 80%;"></div>
+                </div>
+                <div class="wireframe-card-cell">
+                  <div class="wireframe-line" style="width: 60%;"></div>
+                  <div class="wireframe-line" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ARTEFACTO B: SMALL SYSTEMS & APPOINTMENT BOOKING -->
+        <article class="offering-block">
+          <div class="offering-text-col">
+            <div class="offering-tag">[ SECCIÓN 02 / ARTEFACTO B ]</div>
+            <h3 class="offering-title">Sistemas Livianos & Turneros</h3>
+            <p class="offering-desc">
+              Sistemas livianos para consultorios, despachos profesionales y talleres. Elimina el cuello de botella de
+              atender consultas manuales por mensaje. Turneros dinámicos con autogestión de citas 24/7.
+            </p>
+            <ul class="offering-specs-list">
+              <li><span>—</span> Capacidad: <strong>Autogestión de turnos 24/7 sin superposiciones</strong></li>
+              <li><span>—</span> Sincronización: <strong>Recordatorios automáticos que reducen ausencias</strong></li>
+              <li><span>—</span> Integración: <strong>Sin paneles complicados ni costes recurrentes altos</strong></li>
+            </ul>
+            <div class="offering-footer-bar">
+              <a href="#" id="cta-artefacto-turnero" class="cta-button secondary" target="_blank">
+                PROBAR DEMO DE TURNOS →
+              </a>
+            </div>
+          </div>
+
+          <!-- VISUAL B: HIGH-FIDELITY BOOKING SLOT COMPONENT -->
+          <div class="offering-visual-col">
+            <div class="booking-slot-component" aria-label="Componente de reserva interactivo">
+              <div class="booking-badge">
+                <span>RESERVA DE CONSULTA</span>
+                <span>SLOT MANAGER</span>
+              </div>
+              <div class="slot-row active" onclick="selectBookingSlot(this, '10:00 - 10:45 ART')">
+                <span>10:00 - 10:45 ART</span>
+                <span class="slot-action-text">[ SELECCIONADO ]</span>
+              </div>
+              <div class="slot-row" onclick="selectBookingSlot(this, '11:30 - 12:15 ART')">
+                <span>11:30 - 12:15 ART</span>
+                <span class="slot-action-text">DISPONIBLE</span>
+              </div>
+              <div class="slot-row" onclick="selectBookingSlot(this, '16:00 - 16:45 ART')">
+                <span>16:00 - 16:45 ART</span>
+                <span class="slot-action-text">DISPONIBLE</span>
+              </div>
+              <button type="button" id="confirm-booking-btn" class="cta-button" style="width: 100%; margin-top: 10px;"
+                onclick="confirmBookingSlot()">
+                CONFIRMAR TURNO
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ARTEFACTO C: CRM PERSONALIZADOS CON ASISTENCIA IA (REDISEÑADO) -->
+        <article class="offering-block">
+          <div class="offering-text-col">
+            <div class="offering-tag">[ SECCIÓN 03 / ARTEFACTO C ]</div>
+            <h3 class="offering-title">CRM Personalizados con Asistencia IA</h3>
+            <p class="offering-desc">
+              Sistemas a medida para gestión y seguimiento de prospectos comerciales. Sin suscripciones mensuales
+              abusivas ni
+              interfaces recargadas: centralización de leads, automatización de tareas y asistencia con inteligencia
+              artificial para
+              clasificar consultas, resumir interacciones y sugerir respuestas contextuales.
+            </p>
+            <ul class="offering-specs-list">
+              <li><span>—</span> Gestión comercial: <strong>Pipeline ágil de oportunidades adaptado a tu flujo</strong>
+              </li>
+              <li><span>—</span> Asistencia IA: <strong>Scoring de leads, resumen de historial y redacción
+                  asistida</strong></li>
+              <li><span>—</span> Automatización: <strong>Integración directa con WhatsApp, webhooks y bases de datos
+                  propias</strong></li>
+            </ul>
+            <div class="offering-footer-bar">
+              <a href="#" id="cta-artefacto-crm" class="cta-button" target="_blank">
+                CONSULTAR ARQUITECTURA CRM →
+              </a>
+              <div class="chip-mono">MOTOR: <strong>SISTEMA PROPIO / IA INTEGRADA</strong></div>
+            </div>
+          </div>
+
+          <!-- VISUAL C: MICRO-UI DE CONSOLA BENTO TERMINAL CRM EN VIVO -->
+          <div class="offering-visual-col">
+            <div class="crm-terminal-console" aria-label="Consola interactiva de CRM con IA">
+
+              <!-- Console Header -->
+              <div class="console-header">
+                <div class="console-title-group">
+                  <span class="status-dot pulse"></span>
+                  <span style="font-weight: 700; color: var(--text-main);">LIVE INBOUND PIPELINE</span>
+                </div>
+                <div class="console-meta-stats">
+                  <span>AGENT ACTIVE</span>
+                  <span>LAT: 32ms</span>
+                </div>
+              </div>
+
+              <!-- Console Body -->
+              <div class="console-body">
+
+                <!-- Inbound Message Card -->
+                <div class="inbound-lead-card">
+                  <div class="lead-meta-row">
+                    <span class="channel-badge-wa">● WHATSAPP BUSINESS</span>
+                    <span class="lead-timestamp" id="crm-lead-time">Hace 2 min</span>
+                  </div>
+                  <div style="font-size: 11px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;"
+                    id="crm-lead-name">
+                    Clínica Dental San Francisco
+                  </div>
+                  <p class="lead-message-text" id="crm-lead-message">
+                    "Hola! Tenemos 4 odontólogos en el equipo y perdemos muchos turnos por cancelaciones a última hora.
+                    ¿Tienen algo automático?"
+                  </p>
+                </div>
+
+                <!-- AI Diagnostics Block -->
+                <div class="ai-diagnostic-block">
+                  <div class="ai-eval-row">
+                    <span style="font-weight: 700; font-size: 10px; color: var(--accent);">ANÁLISIS DE INTENCIÓN
+                      IA:</span>
+                    <span class="ai-score-pill" id="crm-lead-score">SCORE IA: 98%</span>
+                  </div>
+                  <div class="ai-tags-row" id="crm-lead-tags">
+                    <span class="ai-tag-chip">Prioridad: Alta</span>
+                    <span class="ai-tag-chip">Requerimiento: Turnero</span>
+                    <span class="ai-tag-chip">SLA: Inmediato</span>
+                  </div>
+                </div>
+
+                <!-- AI Response Draft Box -->
+                <div class="ai-response-box">
+                  <div class="response-label">
+                    <span>RESPUESTA GENERADA POR IA:</span>
+                    <span style="color: var(--status-online);">LISTA PARA DESPACHO</span>
+                  </div>
+                  <p class="response-text-preview" id="crm-lead-response">
+                    "¡Hola! Sí, implementamos turneros dinámicos sincronizados 24/7 con recordatorio automático por
+                    WhatsApp que reducen ausencias un 40%. ¿Te comparto una demo funcional?"
+                  </p>
+                  <div class="console-actions-bar">
+                    <button type="button" class="dispatch-btn" id="crm-dispatch-btn" onclick="handleCrmDispatch()">
+                      <span>⚡</span>
+                      <span>APROBAR &amp; ENVIAR</span>
+                    </button>
+                    <button type="button" class="action-btn-secondary" onclick="switchCrmScenario()">
+                      OTRO CASO ↻
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- ARTEFACTO D: QR CARDS PARA EVENTOS -->
+        <article class="offering-block">
+          <div class="offering-text-col">
+            <div class="offering-tag">[ SECCIÓN 04 / ARTEFACTO D ]</div>
+            <h3 class="offering-title">QR Cards para Eventos & Acceso Digital</h3>
+            <p class="offering-desc">
+              Invitaciones digitales de alta fidelidad para bodas, 15 años y encuentros empresariales. Incluye
+              confirmación de asistencia en un toque (RSVP) y acreditación con código QR.
+            </p>
+            <ul class="offering-specs-list">
+              <li><span>—</span> Confirmación: <strong>RSVP sincronizado en planilla de invitados</strong></li>
+              <li><span>—</span> Credencial: <strong>Código QR de verificación inmediata en puerta</strong></li>
+              <li><span>—</span> Extras: <strong>Mapa interactivo, sugerencias de regalo y cuenta regresiva</strong>
+              </li>
+            </ul>
+            <div class="offering-footer-bar">
+              <a href="#" id="cta-artefacto-qr" class="cta-button secondary" target="_blank">
+                SOLICITAR MUESTRA INTERACTIVA →
+              </a>
+              <div class="chip-mono">FORMATO: <strong>DIGITAL PASS RESPONSIVE</strong></div>
+            </div>
+          </div>
+
+          <!-- VISUAL D: SHARP MINIMALIST QR PASS -->
+          <div class="offering-visual-col">
+            <div class="qr-card-artifact">
+              <div class="qr-top-row">
+                <div>
+                  <div class="qr-event-title">EVENT PASS // RSVP</div>
+                  <div style="font-family: var(--font-mono); font-size: 10px; color: #555;">SAN FRANCISCO · CBA</div>
+                </div>
+                <div class="qr-badge-type">CONFIRMED</div>
+              </div>
+              <div class="qr-image-wrapper">
+                <svg class="qr-svg-code" viewBox="0 0 100 100" fill="#000000">
+                  <rect x="10" y="10" width="24" height="24" fill="#000" />
+                  <rect x="14" y="14" width="16" height="16" fill="#FEF9F6" />
+                  <rect x="18" y="18" width="8" height="8" fill="#000" />
+
+                  <rect x="66" y="10" width="24" height="24" fill="#000" />
+                  <rect x="70" y="14" width="16" height="16" fill="#FEF9F6" />
+                  <rect x="74" y="18" width="8" height="8" fill="#000" />
+
+                  <rect x="10" y="66" width="24" height="24" fill="#000" />
+                  <rect x="14" y="70" width="16" height="16" fill="#FEF9F6" />
+                  <rect x="18" y="74" width="8" height="8" fill="#000" />
+
+                  <rect x="42" y="12" width="6" height="6" />
+                  <rect x="52" y="12" width="6" height="6" />
+                  <rect x="42" y="24" width="6" height="6" />
+                  <rect x="52" y="28" width="6" height="6" />
+                  <rect x="12" y="44" width="6" height="6" />
+                  <rect x="24" y="44" width="6" height="6" />
+                  <rect x="36" y="44" width="6" height="6" />
+                  <rect x="48" y="44" width="6" height="6" />
+                  <rect x="60" y="44" width="6" height="6" />
+                  <rect x="72" y="44" width="6" height="6" />
+                  <rect x="84" y="44" width="6" height="6" />
+                  <rect x="44" y="60" width="6" height="6" />
+                  <rect x="64" y="60" width="6" height="6" />
+                  <rect x="76" y="68" width="6" height="6" />
+                  <rect x="84" y="76" width="6" height="6" />
+                  <rect x="48" y="80" width="6" height="6" />
+                </svg>
+              </div>
+              <div class="qr-details-meta">
+                <span>GUEST: DEMO ACCESS</span>
+                <span>ENTRY #084</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 3. WORKFLOW: 3 STEPS RIGID GRID -->
+    <section id="proceso" class="grid-border-b">
+      <div class="container grid-border-x">
+
+        <div class="section-title-bar">
+          <div>
+            <div class="section-index">// 02 METODOLOGÍA COMERCIAL</div>
+            <h2 class="section-heading">Simple, en tres pasos</h2>
+          </div>
+          <div class="chip-mono">SIN SORPRESAS</div>
+        </div>
+
+        <div class="process-grid">
+
+          <div class="process-step-cell">
+            <div class="step-index-num">01</div>
+            <h3 class="step-head">Elegí tus secciones</h3>
+            <p class="step-body">
+              Sumá o quitá bloques del catálogo y verificá cómo cambia el presupuesto en tiempo real, acá mismo.
+            </p>
+          </div>
+
+          <div class="process-step-cell">
+            <div class="step-index-num">02</div>
+            <h3 class="step-head">Anticipo del 50%</h3>
+            <p class="step-body">
+              Arrancamos el desarrollo al cobrar la mitad. El 50% restante se cancela contra entrega verificada o por
+              hitos pactados.
+            </p>
+          </div>
+
+          <div class="process-step-cell">
+            <div class="step-index-num">03</div>
+            <h3 class="step-head">Tu negocio en línea</h3>
+            <p class="step-body">
+              Entrega rápida con fecha precisa, capacitación técnica paso a paso, 6 meses de soporte incluidos y
+              mantenimiento base predecible desde 20 USD/mes.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. PRESUPUESTO EN VIVO (LIVE STRUCTURAL CALCULATOR) -->
+    <section id="presupuestador" class="grid-border-b">
+      <div class="container grid-border-x">
+
+        <div class="section-title-bar">
+          <div>
+            <div class="section-index">// 03 PRESUPUESTO EN VIVO</div>
+            <h2 class="section-heading">Calculador de Landing Page</h2>
+          </div>
+          <div class="chip-mono">PRECIOS EN PESOS ARS</div>
+        </div>
+
+        <div class="calculator-blueprint">
+
+          <!-- LEFT: SECTIONS SELECTION MATRIX -->
+          <div class="calc-left-grid">
+            <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-secondary);">
+              SELECCIONÁ LAS SECCIONES QUE INTEGRARÁN TU LANDING:
+            </div>
+
+            <div class="sections-selector-grid">
+
+              <!-- 1. HERO -->
+              <div class="section-select-chip locked active" data-id="hero" data-name="Hero (Portada)">
+                <div class="chip-checkbox">✓</div>
+                <div>
+                  <div class="chip-text-title">Hero (Siempre)</div>
+                  <div class="chip-text-desc">Portada principal: titular magnético y primer llamado a la acción.</div>
+                </div>
+              </div>
+
+              <!-- 2. SOBRE NOSOTROS -->
+              <div class="section-select-chip active" onclick="toggleChip(this)" data-id="sobre_nosotros"
+                data-name="Sobre nosotros">
+                <div class="chip-checkbox">✓</div>
+                <div>
+                  <div class="chip-text-title">Sobre nosotros</div>
+                  <div class="chip-text-desc">Trayectoria del negocio y respaldo institucional.</div>
+                </div>
+              </div>
+
+              <!-- 3. SERVICIOS -->
+              <div class="section-select-chip active" onclick="toggleChip(this)" data-id="servicios"
+                data-name="Servicios">
+                <div class="chip-checkbox">✓</div>
+                <div>
+                  <div class="chip-text-title">Servicios</div>
+                  <div class="chip-text-desc">Listado detallado de soluciones con especificación.</div>
+                </div>
+              </div>
+
+              <!-- 4. PRODUCTOS -->
+              <div class="section-select-chip" onclick="toggleChip(this)" data-id="productos" data-name="Productos">
+                <div class="chip-checkbox"></div>
+                <div>
+                  <div class="chip-text-title">Productos</div>
+                  <div class="chip-text-desc">Catálogo con fotografías y especificaciones de stock.</div>
+                </div>
+              </div>
+
+              <!-- 5. GALERÍA -->
+              <div class="section-select-chip" onclick="toggleChip(this)" data-id="galeria" data-name="Galería">
+                <div class="chip-checkbox"></div>
+                <div>
+                  <div class="chip-text-title">Galería</div>
+                  <div class="chip-text-desc">Fotografías de planta, taller o proyectos terminados.</div>
+                </div>
+              </div>
+
+              <!-- 6. TESTIMONIOS -->
+              <div class="section-select-chip" onclick="toggleChip(this)" data-id="testimonios" data-name="Testimonios">
+                <div class="chip-checkbox"></div>
+                <div>
+                  <div class="chip-text-title">Testimonios</div>
+                  <div class="chip-text-desc">Validación social de clientes verificados.</div>
+                </div>
+              </div>
+
+              <!-- 7. EQUIPO -->
+              <div class="section-select-chip" onclick="toggleChip(this)" data-id="equipo" data-name="Equipo">
+                <div class="chip-checkbox"></div>
+                <div>
+                  <div class="chip-text-title">Equipo</div>
+                  <div class="chip-text-desc">Presentación del personal técnico y comercial.</div>
+                </div>
+              </div>
+
+              <!-- 8. FAQ -->
+              <div class="section-select-chip" onclick="toggleChip(this)" data-id="faq"
+                data-name="Preguntas frecuentes">
+                <div class="chip-checkbox"></div>
+                <div>
+                  <div class="chip-text-title">Preguntas frecuentes</div>
+                  <div class="chip-text-desc">Resolución directa de objeciones y dudas comunes.</div>
+                </div>
+              </div>
+
+              <!-- 9. CONTACTO -->
+              <div class="section-select-chip" onclick="toggleChip(this)" data-id="contacto" data-name="Contacto">
+                <div class="chip-checkbox"></div>
+                <div>
+                  <div class="chip-text-title">Contacto</div>
+                  <div class="chip-text-desc">Formulario y accesos directos de comunicación.</div>
+                </div>
+              </div>
+
+              <!-- 10. UBICACIÓN -->
+              <div class="section-select-chip" onclick="toggleChip(this)" data-id="ubicacion" data-name="Ubicación">
+                <div class="chip-checkbox"></div>
+                <div>
+                  <div class="chip-text-title">Ubicación</div>
+                  <div class="chip-text-desc">Mapa de planta, dirección física y franja horaria.</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- RIGHT: LIVE BREAKDOWN & DIRECT WHATSAPP ACTION -->
+          <div class="calc-right-summary">
+            <div>
+              <div class="summary-title-row">
+                <div class="summary-heading">CONFIGURACIÓN ACTUAL</div>
+                <div class="summary-metric" id="metric-sections-count">3 SECCIONES ACTIVAS</div>
+                <div class="chip-mono" id="metric-tier-badge" style="margin-top: 8px;">
+                  PLAN BASE: HASTA 3 SECCIONES
+                </div>
+              </div>
+
+              <div class="calc-price-block">
+                <div class="calc-price-label">INVERSIÓN TOTAL CERRADA</div>
+                <div class="calc-price-val" id="calc-total-val">$110.000 <span class="calc-currency">ARS</span></div>
+              </div>
+
+              <div class="calc-breakdown-box">
+                <div class="breakdown-line accent">
+                  <span>ANTICIPO 50% (INICIO):</span>
+                  <span id="calc-advance-val">$55.000 ARS</span>
+                </div>
+                <div class="breakdown-line">
+                  <span>SALDO 50% (ENTREGA):</span>
+                  <span id="calc-balance-val">$55.000 ARS</span>
+                </div>
+                <div class="breakdown-line"
+                  style="color: var(--text-muted); border-top: 1px dashed var(--border-grid); padding-top: 6px; margin-top: 4px;">
+                  <span>SOPORTE Y CAPACITACIÓN:</span>
+                  <span>6 MESES</span>
+                </div>
+                <div class="breakdown-line" style="color: var(--text-muted);">
+                  <span>MANTENIMIENTO BASE:</span>
+                  <span>DESDE 20 USD/MES</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" id="whatsapp-order-btn" class="cta-button" style="width: 100%;" target="_blank">
+              SOLICITAR CON ESTA CONFIGURACIÓN →
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- STICKY MOBILE BAR (Reveals on mobile scroll) -->
+  <div class="mobile-sticky-bar" id="mobile-sticky-bar" role="region" aria-label="Acceso rápido móvil">
+    <div class="mobile-sticky-info">
+      <span class="brand-id">[ s01 ]</span>
+      <div class="mobile-sticky-status">
+        <span class="status-dot pulse"></span>
+        <span>DISPONIBLE</span>
+      </div>
+    </div>
+    <a href="#" id="sticky-whatsapp-btn" class="cta-button sm" target="_blank">
+      WHATSAPP DIRECTO →
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container grid-border-x">
+      <div class="footer-inner">
+        <div>
+          <span>STUDIO 01 // DESARROLLO WEB & ARTEFACTOS DIGITALES</span>
+        </div>
+        <div>
+          <span>SAN FRANCISCO, CÓRDOBA · ARGENTINA</span>
+        </div>
+        <div>
+          <span>© 2026 · MANTENIMIENTO DESDE 20 USD/MES</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- APPLICATION LOGIC -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
